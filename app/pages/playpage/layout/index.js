@@ -8,7 +8,7 @@ class LayoutPagelet extends BigLet {
     super()
     this.root = __dirname
     this.name = 'bpmodule-layout'
-    this.tpl = path.join(__dirname, './index.nj')
+    this.tpl = path.join(__dirname, './index.html')
   }
 }
 

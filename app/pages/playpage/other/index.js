@@ -9,7 +9,7 @@ class OtherPagelet extends Biglet {
   constructor () {
     super()
     this.root = __dirname
-    this.tpl = './index.nj'
+    this.tpl = './index.html'
     this.name = 'bpmodule-other'
     this.domid = 'bpmodule-other'
   }

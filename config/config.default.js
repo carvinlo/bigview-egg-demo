@@ -1,19 +1,26 @@
-'use strict'
+"use strict";
+const path = require("path");
 
 module.exports = appInfo => {
-  const config = exports = {}
+  const config = (exports = {});
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = '1528353482890_3122'
+  config.keys = "1528353482890_3122";
 
   // add your config here
-  config.middleware = []
+  config.middleware = [];
 
-  config.proxy = {
+  /* config.proxy = {
     // target host that matched path will be proxy to
     host: `http://127.0.0.1:8000`,
     // path pattern
     match: 'public'
-  }
-  return config
-}
+  } */
+
+  exports.static = {
+    prefix: "/public/",
+    dir: path.join(appInfo.baseDir, "public")
+  };
+
+  return config;
+};

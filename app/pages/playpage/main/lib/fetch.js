@@ -4,7 +4,7 @@ module.exports = async function fetch () {
   // simulation fetch time
   await sleep(1000)
 
-  const logo = 'https://avatars2.githubusercontent.com/u/25895556?s=200&v=4'
+  const logo = '/public/temp.jpeg'
   const headline = 'Main'
 
   // simulation data

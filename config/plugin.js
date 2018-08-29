@@ -1,9 +1,9 @@
 'use strict'
 
 // disable static
-exports.static = false
+// exports.static = false
 // proxy ykit
-exports.proxy = {
+/* exports.proxy = {
   package: 'egg-proxy',
   enable: true
-}
+} */
